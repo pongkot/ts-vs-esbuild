@@ -3,8 +3,8 @@ import express from 'express';
 import * as path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import indexRouter from './index/index.router';
-import usersRouter from './user/user.router';
+import appRouter from './modules/app/app.router';
+import usersRouter from './modules/user/user.router';
 
 export const app = express();
 
@@ -18,7 +18,7 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
-app.use('/', indexRouter);
+app.use('/', appRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

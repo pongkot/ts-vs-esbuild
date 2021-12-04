@@ -6,12 +6,12 @@ import {
 } from 'express';
 
 /* GET home page. */
-const indexRouter = Router()
+const appRouter = Router()
 
-indexRouter.get('/', (req: Request, res: Response, next: NextFunction) => {
+appRouter.get('/', (req: Request, res: Response, next: NextFunction) => {
     res.render('index', {
         title: 'ts-vs-build'
     })
 })
 
-export default indexRouter
+export default appRouter
