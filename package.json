@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "prebuild": "rimraf dist",
-    "build:tsc": "tsc",
-    "build:esbuild": "node esbuild.js"
+    "build:tsc": "node build --typescript",
+    "build:esbuild": "node build --esbuild"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
