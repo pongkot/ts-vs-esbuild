@@ -62,3 +62,6 @@ typings/
 
 # IDE
 .idea
+
+# artifact
+dist
