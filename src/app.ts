@@ -6,7 +6,7 @@ import logger from 'morgan';
 import indexRouter from './routes';
 import usersRouter from './routes/users';
 
-const app = express();
+export const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, '../views'));
@@ -36,5 +36,3 @@ app.use(function (err: any, req: any, res: any, next: any) {
     res.status(err.status || 500);
     res.render('error');
 });
-
-export default app;
