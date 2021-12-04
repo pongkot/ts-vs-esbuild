@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "build:tsc": "tsc",
-    "build:esbuild": ""
+    "build:esbuild": "node esbuild.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
