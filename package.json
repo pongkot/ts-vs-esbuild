@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "prebuild": "rimraf dist",
-    "build:tsc": "node build --typescript",
-    "build:esbuild": "node build --esbuild"
+    "build:tsc": "node build.js --typescript",
+    "build:esbuild": "node build.js --esbuild"
   },
   "dependencies": {
     "class-validator": "^0.13.2",
@@ -15,7 +15,9 @@
     "express": "~4.16.1",
     "hbs": "~4.0.4",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-beta.1"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.2",

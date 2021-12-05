@@ -8,11 +8,11 @@ import {
 export class CreateUserDto {
     @MinLength(2)
     @MaxLength(32)
-    firstName: string
+    firstname: string
 
     @MinLength(2)
     @MaxLength(32)
-    lastName: string
+    lastname: string
 
     @IsIn(['male', 'female'])
     gender: string

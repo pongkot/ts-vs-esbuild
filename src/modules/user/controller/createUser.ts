@@ -3,8 +3,10 @@ import {
     Response,
 } from 'express';
 import { CreateUserDto } from '../dto';
+import { User } from '../model/user.model';
 
-export const createUser = (req: Request, res: Response): Response => {
+export const createUser = async (req: Request, res: Response): Promise<Response> => {
     const user: CreateUserDto = req.body
-    return res.json(user)
+    const result = await User.create(user)
+    return res.json(result)
 }

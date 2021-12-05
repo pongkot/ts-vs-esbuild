@@ -21,4 +21,5 @@ require("esbuild")
         platform: "node",
         format: "cjs",
         outdir: "dist",
+        tsconfig: "tsconfig.json"
     })

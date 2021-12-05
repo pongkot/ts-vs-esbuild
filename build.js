@@ -17,4 +17,4 @@ const isTypescript = isIn('--typescript')
 const isESBuild = isIn('--esbuild')
 
 if (isTypescript) execute('tsc')
-if (isESBuild) execute('node esbuild')
+if (isESBuild) execute('tsc -noEmit && node esbuild.js')
