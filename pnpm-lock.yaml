@@ -4,15 +4,18 @@ specifiers:
   '@types/cookie-parser': ^1.4.2
   '@types/express': ^4.17.13
   '@types/http-errors': ^1.8.1
+  '@types/lodash': ^4.14.177
   '@types/morgan': ^1.9.3
   '@types/node': ^16.11.11
   class-validator: ^0.13.2
   cookie-parser: ~1.4.4
   debug: ~2.6.9
+  dotenv: ^10.0.0
   esbuild: ^0.14.2
   express: ~4.16.1
   hbs: ~4.0.4
   http-errors: ~1.6.3
+  lodash: ^4.17.21
   morgan: ~1.9.1
   mysql2: ^2.3.3
   rimraf: ^3.0.2
@@ -23,9 +26,11 @@ dependencies:
   class-validator: 0.13.2
   cookie-parser: 1.4.6
   debug: 2.6.9
+  dotenv: 10.0.0
   express: 4.16.4
   hbs: 4.0.6
   http-errors: 1.6.3
+  lodash: 4.17.21
   morgan: 1.9.1
   mysql2: 2.3.3
   sequelize: 6.12.0-beta.1_mysql2@2.3.3
@@ -34,6 +39,7 @@ devDependencies:
   '@types/cookie-parser': 1.4.2
   '@types/express': 4.17.13
   '@types/http-errors': 1.8.1
+  '@types/lodash': 4.14.177
   '@types/morgan': 1.9.3
   '@types/node': 16.11.11
   esbuild: 0.14.2
@@ -86,6 +92,10 @@ packages:
 
   /@types/http-errors/1.8.1:
     resolution: {integrity: sha512-e+2rjEwK6KDaNOm5Aa9wNGgyS9oSZU/4pfSMMPYNOfjvFI0WVXm29+ITRFr6aKDvvKo7uU1jV68MW4ScsfDi7Q==}
+    dev: true
+
+  /@types/lodash/4.14.177:
+    resolution: {integrity: sha512-0fDwydE2clKe9MNfvXHBHF9WEahRuj+msTuQqOmAApNORFvhMYZKNGGJdCzuhheVjMps/ti0Ak/iJPACMaevvw==}
     dev: true
 
   /@types/mime/1.3.2:
@@ -248,6 +258,11 @@ packages:
 
   /destroy/1.0.4:
     resolution: {integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=}
+    dev: false
+
+  /dotenv/10.0.0:
+    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
+    engines: {node: '>=10'}
     dev: false
 
   /dottie/2.0.2:

@@ -4,6 +4,7 @@ import {
     Optional,
     Sequelize,
 } from 'sequelize';
+import { getAcmeConnectUri } from '../../../common';
 
 interface IUserAttribute {
     id?: number;
@@ -29,6 +30,8 @@ export class User extends Model<IUserAttribute, IUserCreationAttribute> implemen
     readonly updatedAt?: string;
 }
 
+const acmeConnUri = getAcmeConnectUri()
+
 User.init({
     id: {
         type: DataTypes.INTEGER,
@@ -49,7 +52,7 @@ User.init({
     },
 }, {
     tableName: 'users',
-    sequelize: new Sequelize('mysql://root:P@ssw0rd@localhost:3306/acme', { logging: false }),
+    sequelize: new Sequelize(acmeConnUri, { logging: false }),
     createdAt: true,
     updatedAt: true,
     freezeTableName: true,
