@@ -1,17 +1,6 @@
 require('dotenv').config({path: '.env'});
+import { TGetConfig } from './types/getConfig.type';
 import * as _ from 'lodash';
-
-type TGetConfig = {
-    database: {
-        acme: {
-            user: string
-            pass: string
-            host: string
-            name: string
-            port: number
-        }
-    }
-}
 
 export const getConfig = (env = process.env): TGetConfig => {
     return {
